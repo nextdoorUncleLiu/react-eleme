@@ -1,0 +1,57 @@
+@charset "UTF-8";
+.shoppingStepper {
+  position: absolute;
+  right: 0;
+  bottom: 0.15rem;
+}
+.shoppingStepper a {
+  width: 16px;
+  height: 16px;
+  border-radius: 16px;
+  border: 2px solid #0090d5;
+  background: #fff;
+  line-height: 16px;
+  text-align: center;
+  margin: .093333rem 0;
+  float: left;
+  -webkit-transition: all 10s linear;
+  transition: all 0.4s linear;
+  opacity: 1;
+}
+
+.shoppingStepper a svg {
+  width: 100%;
+  height: 100%;
+}
+.shoppingStepper a.cart-add {
+  background: #00a1db;
+  opacity: 1 !important;
+}
+.shoppingStepper span {
+  font-size: 12px;
+  float: left;
+  margin: .093333rem;
+  padding: 2px;
+  line-height: 16px;
+  -webkit-transition: all 10s linear;
+  transition: all 0.4s linear;
+  opacity: 1;
+}
+
+.shoppingStepper .no-count{
+  opacity: 0;
+}
+
+.ball{
+  position: fixed;
+  right: 20px;
+  transition: all 0.4s cubic-bezier(0.49,-0.29,0.75,0.41);
+  z-index: 9999;
+}
+.ball .inner {
+  width: 16px;
+  height: 16px;
+  border-radius: 16px;
+  background: #00a0dc;
+  transition: all 0.4s linear;
+}

@@ -1,0 +1,12 @@
+@charset "UTF-8";
+body,ul,ol,form,input,textarea,th,td,h1,h2,h3,h4,h5,h6{margin:0;padding:0;font-size: 12px;}
+html,body{height: 100%;}
+p,dl,dd{margin:0;}
+li{padding:0;list-style:none;}
+img{border:none;}
+a{text-decoration:none;}
+a:visited,a:link{text-decoration:none}
+textarea {resize: none;}
+input:focus {outline: 0;}
+i {font-style: normal;}
+body{ font-family:"微软雅黑";-moz-user-select:none;-webkit-user-select:none;user-select:none;}

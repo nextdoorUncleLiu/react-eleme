@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+.shoppingTab-left {
+	width: 80px;
+	height: 100%;
+	overflow-y: auto;
+	background: #f4f5f7;
+}
+.shoppingTab-left li {
+	height: 52px;
+	padding-left: 12px;
+	padding-right: 12px;
+    line-height: 16px;
+}
+.shoppingTab-left li:last-child span{
+  border: 0;
+}
+.shoppingTab-left li.active {
+	background: #fff;
+}
+.shoppingTab-left li span {
+	height: 100%;
+	display: flex;
+    align-items: center;
+	border-bottom: 2px solid #eaebed;
+}
+.shoppingTab-left li.active span {
+	border: 0;
+}

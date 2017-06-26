@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+.am-tabs-content .am-tabs-tabpane {
+	height: 100%;
+}
+.shoppingMenu .am-tabs-tab {
+	font-size: 14px;
+	height: 40px;
+	line-height: 40px;
+}
+.shoppingMenu .am-tabs-ink-bar {
+	height: 0px;
+}
+.shoppingMenu .am-tabs-bar .am-tabs-tab-active {
+	color: #f01413;
+}
+.shoppingMenu .am-tabs-content {
+	position: absolute;
+	top: 174px;
+	width: 100%;
+	bottom: 48px;
+}

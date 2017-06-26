@@ -1,0 +1,286 @@
+@charset "UTF-8";
+
+@keyframes sizeRevision
+{
+  from {
+    transform: scale(1);
+    -ms-transform: scale(1);  /* IE 9 */
+    -webkit-transform: scale(1);  /* Safari 和 Chrome */
+    -o-transform: scale(1); /* Opera */
+    -moz-transform: scale(1); /* Firefox */
+  }
+  30% {
+    transform: scale(0.8);
+    -ms-transform: scale(0.8);  /* IE 9 */
+    -webkit-transform: scale(0.8);  /* Safari 和 Chrome */
+    -o-transform: scale(0.8); /* Opera */
+    -moz-transform: scale(0.8); /* Firefox */
+  }
+  60% {
+    transform: scale(1.1);
+    -ms-transform: scale(1.1);  /* IE 9 */
+    -webkit-transform: scale(1.1);  /* Safari 和 Chrome */
+    -o-transform: scale(1.1); /* Opera */
+    -moz-transform: scale(1.1); /* Firefox */
+  }
+  to {
+    transform: scale(1);
+    -ms-transform: scale(1);  /* IE 9 */
+    -webkit-transform: scale(1);  /* Safari 和 Chrome */
+    -o-transform: scale(1); /* Opera */
+    -moz-transform: scale(1); /* Firefox */
+  }
+}
+
+@-moz-keyframes sizeRevision /* Firefox */
+{
+  from {
+    transform: scale(1);
+    -ms-transform: scale(1);  /* IE 9 */
+    -webkit-transform: scale(1);  /* Safari 和 Chrome */
+    -o-transform: scale(1); /* Opera */
+    -moz-transform: scale(1); /* Firefox */
+  }
+  30% {
+    transform: scale(0.8);
+    -ms-transform: scale(0.8);  /* IE 9 */
+    -webkit-transform: scale(0.8);  /* Safari 和 Chrome */
+    -o-transform: scale(0.8); /* Opera */
+    -moz-transform: scale(0.8); /* Firefox */
+  }
+  60% {
+    transform: scale(1.1);
+    -ms-transform: scale(1.1);  /* IE 9 */
+    -webkit-transform: scale(1.1);  /* Safari 和 Chrome */
+    -o-transform: scale(1.1); /* Opera */
+    -moz-transform: scale(1.1); /* Firefox */
+  }
+  to {
+    transform: scale(1);
+    -ms-transform: scale(1);  /* IE 9 */
+    -webkit-transform: scale(1);  /* Safari 和 Chrome */
+    -o-transform: scale(1); /* Opera */
+    -moz-transform: scale(1); /* Firefox */
+  }
+}
+
+@-webkit-keyframes sizeRevision /* Safari 和 Chrome */
+{
+  from {
+    transform: scale(1);
+    -ms-transform: scale(1);  /* IE 9 */
+    -webkit-transform: scale(1);  /* Safari 和 Chrome */
+    -o-transform: scale(1); /* Opera */
+    -moz-transform: scale(1); /* Firefox */
+  }
+  30% {
+    transform: scale(0.8);
+    -ms-transform: scale(0.8);  /* IE 9 */
+    -webkit-transform: scale(0.8);  /* Safari 和 Chrome */
+    -o-transform: scale(0.8); /* Opera */
+    -moz-transform: scale(0.8); /* Firefox */
+  }
+  60% {
+    transform: scale(1.1);
+    -ms-transform: scale(1.1);  /* IE 9 */
+    -webkit-transform: scale(1.1);  /* Safari 和 Chrome */
+    -o-transform: scale(1.1); /* Opera */
+    -moz-transform: scale(1.1); /* Firefox */
+  }
+  to {
+    transform: scale(1);
+    -ms-transform: scale(1);  /* IE 9 */
+    -webkit-transform: scale(1);  /* Safari 和 Chrome */
+    -o-transform: scale(1); /* Opera */
+    -moz-transform: scale(1); /* Firefox */
+  }
+}
+
+@-o-keyframes sizeRevision /* Opera */
+{
+  from {
+    transform: scale(1);
+    -ms-transform: scale(1);  /* IE 9 */
+    -webkit-transform: scale(1);  /* Safari 和 Chrome */
+    -o-transform: scale(1); /* Opera */
+    -moz-transform: scale(1); /* Firefox */
+  }
+  30% {
+    transform: scale(0.8);
+    -ms-transform: scale(0.8);  /* IE 9 */
+    -webkit-transform: scale(0.8);  /* Safari 和 Chrome */
+    -o-transform: scale(0.8); /* Opera */
+    -moz-transform: scale(0.8); /* Firefox */
+  }
+  60% {
+    transform: scale(1.1);
+    -ms-transform: scale(1.1);  /* IE 9 */
+    -webkit-transform: scale(1.1);  /* Safari 和 Chrome */
+    -o-transform: scale(1.1); /* Opera */
+    -moz-transform: scale(1.1); /* Firefox */
+  }
+  to {
+    transform: scale(1);
+    -ms-transform: scale(1);  /* IE 9 */
+    -webkit-transform: scale(1);  /* Safari 和 Chrome */
+    -o-transform: scale(1); /* Opera */
+    -moz-transform: scale(1); /* Firefox */
+  }
+}
+.shoppingTotalMain {
+  position: fixed;
+  bottom: 0;
+  height: 48px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0);
+  transition: opacity .5s;
+  -moz-transition: opacity .5s;  /* Firefox 4 */
+  -webkit-transition: opacity .5s; /* Safari 和 Chrome */
+  -o-transition: opacity .5s;  /* Opera */
+}
+.shoppingTotalMainActive {
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+.shoppingTotal {
+  position: absolute;
+  bottom: 0;
+  height: 48px;
+  width: 100%;
+  background-color: #141c27;
+  z-index: 2;
+}
+.shoppingTotal .totalBall {
+  position: absolute;
+  left: 10px;
+  bottom: 5px;
+  width: 44px;
+  height: 44px;
+  border-radius: 44px;
+  background: #444;
+  border: 5px solid #14202c;
+  background-image: url('./shoppingCartIco.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50%;
+  z-index: 2;
+}
+.shoppingTotal .animation {
+  animation: sizeRevision .5s .4s;
+  -moz-animation: sizeRevision .5s .4s; /* Firefox */
+  -webkit-animation: sizeRevision .5s .4s;  /* Safari 和 Chrome */
+  -o-animation: sizeRevision .5s .4s; /* Opera */
+}
+.shoppingTotal>div.active {
+  background-image: url('./shoppingCartActiveIco.png');
+  background-color: #00a0dc;
+}
+.shoppingTotal .noGoods:after {
+  visibility: hidden;
+}
+.shoppingTotal .totalBall:after {
+  position: absolute;
+  right: -1px;
+  top: -1px;
+  color: #fff;
+  background: #ff461d;
+  padding: .013333rem .073333rem;
+  border-radius: .32rem;
+  content: attr(data-total);
+}
+.shoppingTotal .priceTotal {
+  position: absolute;
+  left: 64px;
+  top: 0;
+  right: 105px;
+  height: 100%;
+  box-sizing: border-box;
+}
+.shoppingTotal .priceTotal p {
+  padding-right: 12px;
+  padding-left: 12px;
+  display: block;
+  font-size: 12px;
+  color: #8b9096;
+  line-height: 48px;
+}
+.shoppingTotal .priceTotal p span.curTotal {
+  font-size: 14px;
+  color: #fff;
+  font-weight: bold;
+}
+.shoppingTotal .priceTotal p span.deliveryFee {
+  padding-left: 12px;
+  margin-left: 12px;
+  border-left: 1px solid #2c353e;
+}
+.shoppingTotal .priceTotal button {
+  position: absolute;
+  top: 0;
+  right: -105px;
+  width: 105px;
+  height: 100%;
+  background-color: #2b343b;
+  color: #7e8387;
+  border: 0;
+}
+.shoppingTotal .priceTotal button.active {
+  background-color: #4cd964;
+  color: #fff;
+  font-weight: bold;
+}
+.shoppingTotalList {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+  padding-bottom: 22px;
+  transition: all .2s;
+  -moz-transition: all .2s;  /* Firefox 4 */
+  -webkit-transition: all .2s; /* Safari 和 Chrome */
+  -o-transition: all .2s;  /* Opera */
+  background: #fff;
+  height: 0;
+}
+.shoppingTotalList h3 {
+  height: 40px;
+  padding-left: 18px;
+  line-height: 40px;
+  color: #171a1f;
+  font-size: 14px;
+  background-color: #f4f5f7;
+  border-bottom: 1px solid #dddee0;
+  font-weight: normal;
+}
+.shoppingTotalList h3 a {
+  float: right;
+  color: #0e9bea;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+.shoppingTotalList ul {
+  max-height: 200px;
+  overflow-y: auto;
+}
+.shoppingTotalList ul li {
+  position: relative;
+  line-height: 48px;
+  margin-left: 18px;
+  margin-right: 18px;
+  border-bottom: 1px solid #e8e8e8;
+  font-size: 14px;
+}
+.shoppingTotalList ul li h4 {
+  display: inline;
+}
+.shoppingTotalList ul li>span {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 85px;
+  color: #f31f11;
+}
+.shoppingTotalListActive {
+  height: initial;
+  bottom: 48px;
+}

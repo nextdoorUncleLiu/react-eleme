@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+.shoppingClass {
+	font-size: 12px;
+	display: flex;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
